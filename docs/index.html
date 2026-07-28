@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kass — training that stays between you and your coach</title>
+  <meta name="description" content="Kass is a training app for coaches and their clients. Every session, every weight, every note is sealed between the two of you — the server can't read any of it.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="shell">
+    <a class="wordmark" href="/">Kass</a>
+    <a class="button button--signin" href="https://home.kass.training">Sign in</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="shell">
+      <h1>Training is personal.<br>Kass keeps it that way.</h1>
+      <p class="hero-lede">
+        Kass is a training app for coaches and their clients. Every session,
+        every weight, every note about your body is sealed between the two of
+        you before it leaves your phone. The server that runs Kass can't read
+        any of it — and neither can we.
+      </p>
+
+      <div class="seal-demo" aria-label="The same training record, as you see it and as the server sees it">
+        <figure class="pane pane--you">
+          <figcaption>What you and your coach see</figcaption>
+          <div class="session-card">
+            <div class="session-head">
+              <span class="session-next">next: GSLP 2.1</span>
+              <span class="session-start">Start</span>
+            </div>
+            <table class="session-table">
+              <tbody>
+                <tr><th scope="row">Squat</th><td class="load">82.5&nbsp;kg</td><td>3×5</td></tr>
+                <tr><th scope="row">Overhead press</th><td class="load">47.5&nbsp;kg</td><td>3×5</td></tr>
+                <tr><th scope="row">Chin-up</th><td class="load">bodyweight</td><td>max reps</td></tr>
+              </tbody>
+            </table>
+            <p class="session-note">Weights worked out from your last session. Everything editable.</p>
+          </div>
+        </figure>
+        <figure class="pane pane--server">
+          <figcaption>What our server sees</figcaption>
+          <pre class="ciphertext" id="ciphertext" aria-label="Unreadable encrypted data">hQGMA9xkVe2m1q3iAQv/Zk1trhV0kOAxPmc2
+r7dJ9UWv4hK0aTx8sLq2yEwBGpN5oc3fRuYe
+Xj6nD1mQ0vK8bZwSHtC4gAl7yPoMx2NfEqUi
+JW9crT3hL6sDkVbAe8uNRZ1oGwXyPjM4vFtq
+0K7mSdxHnUEiC2gYrLBoQ5wAzTk3NpVJfe86
+uMhX1cR9bWvyDGaEsoL0jPq7ZniTtF24xUKS
+==</pre>
+          <figcaption class="pane-note">This is the only copy we ever hold.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="virtues">
+    <div class="shell">
+      <h2>Nobody's business but yours</h2>
+      <p class="section-lede">
+        A training log is a record of a body: what it can lift, where it's
+        injured, what it weighs, when it's alone in a building. Kass treats it
+        that way.
+      </p>
+      <div class="virtue-grid">
+        <article class="virtue">
+          <h3>Sealed by default</h3>
+          <p>
+            Your log is locked on your phone before it's saved anywhere, with
+            keys that never leave it. If someone broke into our servers
+            tomorrow, they'd carry away noise.
+          </p>
+        </article>
+        <article class="virtue">
+          <h3>The next session is always ready</h3>
+          <p>
+            Kass works out your next weights from what you actually lifted —
+            including the session where everything went wrong. Walk in, tap
+            Start, train.
+          </p>
+        </article>
+        <article class="virtue">
+          <h3>Built for basement gyms</h3>
+          <p>
+            Signal comes and goes; your log doesn't. Kass keeps working
+            offline, and a set, once tapped, is never lost.
+          </p>
+        </article>
+        <article class="virtue">
+          <h3>Your history is yours for life</h3>
+          <p>
+            Change coaches and your log stays whole, because it belongs to the
+            person who trained it. A new coach joins your story — they don't
+            restart it.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="coaches">
+    <div class="shell">
+      <h2>For coaches</h2>
+      <p>
+        Write a programme once and give each client their own living copy — it
+        adapts to how they actually train, without touching anyone else's.
+        And no client can ever see another client's log: not because of a
+        permission setting, but because each person's Kass is genuinely
+        theirs, sealed to them alone.
+      </p>
+      <p>
+        Your programmes, your client list, and your notes stay in your own
+        Kass, just as sealed as theirs.
+      </p>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <div class="shell">
+      <h2>How private is private?</h2>
+      <dl class="privacy-list">
+        <div>
+          <dt>Encrypted before it leaves your phone</dt>
+          <dd>
+            Weights, reps, bodyweight, injuries, messages — all of it is
+            sealed on your device. The server stores and delivers sealed
+            records it cannot open.
+          </dd>
+        </div>
+        <div>
+          <dt>No big database of everyone</dt>
+          <dd>
+            Each person's Kass stands alone. There is no shared pool of
+            training data to mine, sell, or leak — nothing readable exists to
+            take.
+          </dd>
+        </div>
+        <div>
+          <dt>AI only if you ask</dt>
+          <dd>
+            Kass works completely without it. Switch it on and it's a
+            disclosed guest — everything it writes is marked 🤖, and your name
+            never leaves the building.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="shell">
+      <h2>Kass is in private training</h2>
+      <p>
+        Right now, Kass is being built around one coach and one client,
+        session by session, in a real gym. If you're one of its people,
+        sign in below. If you'd like Kass for your clients — it isn't open
+        yet, but it's getting there.
+      </p>
+      <a class="button button--primary" href="https://home.kass.training">Sign in</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <p>Kass — named after a real coach.</p>
+    <p class="fine">
+      For the technically curious: end-to-end encryption, one isolated
+      instance per person, keys generated and held only on your own devices.
+    </p>
+  </div>
+</footer>
+
+<script src="/js/seal.js" defer></script>
+</body>
+</html>
